@@ -1,0 +1,396 @@
+```css
+/* =========================================
+   Purelistic Vegan Catering
+   External Style Sheet
+   ========================================= */
+
+
+/* Color Palette */
+:root {
+    --background: #DCEED1;
+    --secondary: #AAC0AA;
+    --accent: #736372;
+    --warm-accent: #A18276;
+    --primary: #7A918D;
+    --white: #FFFFFF;
+    --text: #333333;
+}
+
+
+/* Makes sizing easier across the website */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Main Page */
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Spectral", Georgia, serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* Wrapper */
+#wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Header */
+header {
+    background-color: var(--secondary);
+    color: var(--text);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+/* Main Heading */
+h1 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+/* Header Link */
+header h1 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+header h1 a:visited {
+    color: var(--accent);
+}
+
+
+header h1 a:hover {
+    color: var(--warm-accent);
+}
+
+
+/* Tagline */
+.tagline {
+    color: var(--accent);
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+/* Navigation */
+nav {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+
+/* Navigation List */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Navigation Items */
+nav li {
+    margin: 0;
+}
+
+
+/* Navigation Links */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Navigation Hover */
+nav a:hover {
+    color: var(--background);
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* Sections */
+section {
+    background-color: var(--white);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid var(--secondary);
+}
+
+
+/* Section Headings */
+h2 {
+    color: var(--accent);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+
+/* Smaller Headings */
+h3 {
+    color: var(--primary);
+    font-family: "EB Garamond", Georgia, serif;
+}
+
+
+/* Paragraphs */
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+/* Content Images */
+.content-image {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+/* Lists */
+ul {
+    line-height: 1.7;
+}
+
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Links Inside Main Content */
+main a {
+    color: var(--accent);
+}
+
+
+main a:hover {
+    color: var(--warm-accent);
+}
+
+
+/* =========================================
+   Catering Form
+   ========================================= */
+
+form {
+    background-color: var(--background);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* Each Form Field */
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Form Labels */
+label {
+    display: block;
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Form Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-family: "Spectral", Georgia, serif;
+    font-size: 16px;
+}
+
+
+/* Text Area */
+textarea {
+    resize: vertical;
+}
+
+
+/* Submit Button */
+input[type="submit"] {
+    width: auto;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Submit Button Hover */
+input[type="submit"]:hover {
+    background-color: var(--accent);
+}
+
+
+/* =========================================
+   Menu Table
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px;
+    text-align: left;
+}
+
+
+td {
+    border: 1px solid var(--secondary);
+    padding: 12px;
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+footer {
+    background-color: var(--accent);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+/* Tablet and Smaller Screens */
+@media (max-width: 768px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        border-bottom: 1px solid var(--secondary);
+        margin-bottom: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+        margin: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+
+/* Phone Screens */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
